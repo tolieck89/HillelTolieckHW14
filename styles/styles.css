@@ -10,17 +10,17 @@
 
   body {
     margin-top: 0;
-    
-  
-  }
+    background-image: url('../img/designer_1.png');
+    background-position: top right; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: contain;
+   }
+
   .wrapper {
     width: 1440px;
     margin: 0 auto;
-    background-image: url('../img/designer_1.png');
-    background-repeat: no-repeat;
-    background-position: 418px 0;
-    /* background-color: #E7ECFF; */
-}
+   }
 
 .header_container {
     display: flex;

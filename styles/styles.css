@@ -7,24 +7,54 @@
     font-family: 'Roboto_bold';
     src: url('../fonts/Roboto-Bold.ttf'); 
   }
+body {
+  margin-top: 0;
+  background-image: url('../img/designer_1.png');
+    background-position: top right; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: contain;
+}
 
-  .header_container {
-    display: flex;
-  }
+.wrapper {
+  width: 1440px;
+}
 
- .nav-item a  { 
-    color: black   !important;
-    text-decoration: none;
-  }
+.header_link_button {
+  width: 160px;
+  height: 26px;
+  /* margin-top: 18px; */
+  margin-left: 355px;
+  padding: 4px 0 0 4px;
+}
 
 .link_button {
+  background-color: #111B47;
+  color: white;
+  border-radius: 2px;
+  font-family: 'Roboto_regular';
+  text-align: center;
+  padding: 4px 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.list-unstyled {
+  gap: 60px;
   
 }
 
-.link_button a {
-    font-size: 0.75rem;
-    font-family: 'Roboto_regular';
-    padding: 4px 60px;
-    background-color: #111B47;
-    color: white !important;
+header {
+  width: 1440px;
+  height: 60px;
+}
+
+.list-unstyled  a {
+  color: #505F98;
 }

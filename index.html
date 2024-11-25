@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HW-14 bootstrap</title>
@@ -11,23 +13,215 @@
 <body>
   <div class="wrapper mx-auto my-0">
     
-    <header class="d-flex justify-content-between m-0 align-items-center">
+    <header class="d-flex justify-content-between m-0 align-content-center ">
       
-     <ul class="d-flex justify-content-between list-unstyled align-items-center">
+     <ul class="d-flex justify-content-between list-unstyled ">
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
      </ul>
 
-     <div>
+     <div class="logo">
       <img src="img/logo.png" alt="logo">
      </div>
 
-     <div class="header_link_button link_button"><a href="#">Buy Now</a></div>
+     <a href="#" class="btn btn-primary header_link_button" role="button" data-bs-toggle="button">Buy Now</a>
+    
 
     </header>
 
+    <div class="d-flex flex-column introduce_container">
+    
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <span class="another_section_left_text--title">Introduce Your Product Quickly & Effectively</span>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
+              nascetur ridiculus</p>
+              <p> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p></div>
+          </div>
+        </div>
+      </div>
 
+      <div class="d-flex gap-5 ml-3 mt-4">
+        <button type="button" class="btn btn-primary btn-sm custom_button">Purchase UI Kit</button>
+        <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Learn More</a>
+
+      </div>
+    </div>
+
+    
+
+  
+<div class="accordion accordion_light" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <span class="another_section_left_text--title">Light, Fast & Powerful</span>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <section class="d-flex justify-content-around another_section_container">
+            <div class="d-flex flex-column another_section_left_container" >
+              <div class="another_section_left_text--body"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
+                <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                Nulla consequat massa quis enim.</p></div>
+              <div class="d-flex">
+                <div class="d-flex flex-column "> 
+                  <div class="another_section_left_bottom__img"><img src="img/Icon.png" alt="icon"></div>
+                  <div class="another_section_left_bottom__text--title">Title Goes Here</div>
+                  <div class="another_section_left_bottom__text--body">Lorem ipsum dolor sit amet, 
+                      consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+      
+                </div>
+                <div class="d-flex flex-column "> 
+                  <div class="another_section_left_bottom__img"><img src="img/Icon.png" alt="icon"></div>
+                  <div class="another_section_left_bottom__text--title">Title Goes Here</div>
+                  <div class="another_section_left_bottom__text--body">Lorem ipsum dolor sit amet, 
+                      consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+      
+                </div>
+                
+              </div>
+
+            </div>
+            <div class="another_another_section_right"><img src="img/undraw_mobile_login_ikmv.png" alt="background_img"></div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <span class="main_section_right_part__text--title">Light, Fast & Powerful</span>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <section class="d-flex justify-content-around  main_section_container">
+            <div class="main_section_left_part"><img src="img/left_1.png" alt="left1"></div>
+            <div class="main_section_right_part_container d-flex flex-column">
+                <div class="main_section_right_part__text--body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
+                    <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                        Nulla consequat massa quis enim.</p>
+                </div>
+            </div>
+            </section>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <span class="main_section_right_part__text--title">Light, Fast & Powerful</span>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <section class=" justify-content-around d-flex main_section_container">
+
+            <div class="main_section_left_part"><img src="img/left_2.png" alt="left2"></div>
+            <div class="main_section_right_part_container">
+                <div class="main_section_right_part__text--body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
+                    <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                        Nulla consequat massa quis enim.</p>
+                </div>
+            </div>
+        
+        </section>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+          <span class="main_section_right_part__text--title">Light, Fast & Powerful</span>
+        </button>
+      </h2>
+      <div id="collapseFourth" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <section class=" d-flex main_section_container">
+
+            <div class="   main_section_left_part "><img src="img/left_3.png" alt="left3"></div>
+            <div class="main_section_right_part_container">
+                <div class="main_section_right_part__text--body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
+                    <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                        Nulla consequat massa quis enim.</p>
+                        <button type="button" class="btn btn-primary btn-sm custom_button">Purchase UI Kit</button>
+
+                </div>
+            </div>
+        
+        </section>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="bottom_container d-flex flex-column">
+    <section class="above_footer--container d-flex flex-column justify-content-center align-content-center">
+    
+        <div class="above_footer__text--title">A Price To Suit Everyone</div>
+        <div class="above_footer__text--body">Lorem ipsum dolor sit amet, consectetuer 
+            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </div>
+        <div class="above_footer__text--price">$40</div>
+        <div class="above_footer__text--body">UI Design Kit</div>
+        <div class="above_footer__text--above_button">See, One price. Simple.</div>
+        <div class="link_button"><button type="button" class="btn btn-primary btn-sm custom_button">Purchase Now</button>
+        </div>
+    </section>
+    </div>
+
+    <footer class="footer_container d-flex flex-column justify-content-center">
+      <div class="footer_top_section--container d-flex justify-content-between align-items-center align-content-center">
+          <div class="footer_top_section--year">©2023 Yourcompany</div>
+          <div class="header_logo">Landing</div>
+          <button type="button" class="btn btn-primary btn-sm custom_button">Purchase Now</button>
+        </div>
+  
+      <div class="footer_bottom_section--container d-flex  justify-content-between align-items-center mt-4">
+          <div class="list_container d-flex ">
+  
+              <div class="header_list_item"><a href="#home">Home</a></div>
+              <div class="header_list_item"><a href="#about">About</a></div>
+              <div class="header_list_item"><a href="#footer">Contact</a></div>
+      
+          </div>
+  
+          <div class="footer_bottom_section--social_media_icons--container d-flex " id="footer">
+              <div class="footer_bottom_section--social_media_icons"><a href="#"><img src="img/facebook.png" alt="facebook"></a></div>
+              <div class="footer_bottom_section--social_media_icons"><a href="#"><img src="img/instagram.png" alt="LinkID"></a></div>
+              <div class="footer_bottom_section--social_media_icons"><a href="#"><img src="img/twitter.png" alt="twitter"></a></div>
+              <div class="footer_bottom_section--social_media_icons"><a href="#"><img src="img/youtube.png" alt="YouTube"></a></div>
+              <div class="footer_bottom_section--social_media_icons"><a href="#"><img src="img/Insta.png" alt="Instagram"></a></div>
+            
+          </div>
+      </div>
+  
+  
+  </footer>
+
+
+
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
